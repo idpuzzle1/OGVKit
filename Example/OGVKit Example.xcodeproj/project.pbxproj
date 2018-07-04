@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D59E30BF54DDE9CCFFD9D02 /* Pods_OGVKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C3D9A2848BAFADE8CD1F89 /* Pods_OGVKit_Example.framework */; };
-		7A18EA97D36CE85032033363 /* Pods_OGVKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15293075762407D432DDD467 /* Pods_OGVKit_Tests.framework */; };
+		A2E4950C87EED7185682564D /* Pods_OGVKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6BD24056908B35569414EA /* Pods_OGVKit_Tests.framework */; };
+		A353D79544A72A9CA29C3ADD /* Pods_OGVKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B5E167147BC5914CD2A161 /* Pods_OGVKit_Example.framework */; };
 		D42B38461CD7B12D00529092 /* OGVKit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D474D5C61CD7B04C00D8BBE3 /* OGVKit_Tests.m */; };
 		D42B38491CD7B17500529092 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D42B38471CD7B17500529092 /* InfoPlist.strings */; };
 		D42B384C1CD7B17B00529092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42B384A1CD7B17B00529092 /* Main.storyboard */; };
@@ -30,6 +30,9 @@
 		D4F61F651CD7ADAD00898F7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F61F641CD7ADAD00898F7F /* main.m */; };
 		DD8A506FD85F5A250221726A /* bunny_opus_vp8.webm in Resources */ = {isa = PBXBuildFile; fileRef = DD8A56AF7A230FD69EAC33A9 /* bunny_opus_vp8.webm */; };
 		DD8A5A9E0C27E70ED811521D /* bunny_opus_vp9.webm in Resources */ = {isa = PBXBuildFile; fileRef = DD8A5464BF31D7D7528F738C /* bunny_opus_vp9.webm */; };
+		E521B3FC20ECA7FF00ED9B44 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521B3FB20ECA7FE00ED9B44 /* CollectionViewController.swift */; };
+		E521B3FE20ECA83200ED9B44 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521B3FD20ECA83200ED9B44 /* VideoCell.swift */; };
+		E521B40120ECA98200ED9B44 /* NSArray+FNVideoArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E521B40020ECA98200ED9B44 /* NSArray+FNVideoArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +47,8 @@
 
 /* Begin PBXFileReference section */
 		05117F98C7334F9257E594D6 /* Pods-OGVKit Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGVKit Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OGVKit Example/Pods-OGVKit Example.debug.xcconfig"; sourceTree = "<group>"; };
-		15293075762407D432DDD467 /* Pods_OGVKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OGVKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B5E167147BC5914CD2A161 /* Pods_OGVKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OGVKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FB581D80B48B5EFE9FA810 /* Pods-OGVKit Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGVKit Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OGVKit Tests/Pods-OGVKit Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A7C3D9A2848BAFADE8CD1F89 /* Pods_OGVKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OGVKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7ADCF215678A950A5B67C43 /* Pods-OGVKit Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGVKit Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OGVKit Example/Pods-OGVKit Example.release.xcconfig"; sourceTree = "<group>"; };
 		CBFEF16242285C7F28CBAFD5 /* Pods-OGVKit Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OGVKit Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OGVKit Tests/Pods-OGVKit Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D42B38481CD7B17500529092 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -78,8 +80,14 @@
 		D4F61F641CD7ADAD00898F7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4F61F741CD7ADAD00898F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F61F791CD7ADAD00898F7F /* OGVKit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OGVKit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6BD24056908B35569414EA /* Pods_OGVKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OGVKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A5464BF31D7D7528F738C /* bunny_opus_vp9.webm */ = {isa = PBXFileReference; lastKnownFileType = file.webm; name = bunny_opus_vp9.webm; path = Samples/bunny_opus_vp9.webm; sourceTree = SOURCE_ROOT; };
 		DD8A56AF7A230FD69EAC33A9 /* bunny_opus_vp8.webm */ = {isa = PBXFileReference; lastKnownFileType = file.webm; name = bunny_opus_vp8.webm; path = Samples/bunny_opus_vp8.webm; sourceTree = SOURCE_ROOT; };
+		E521B3FA20ECA7FE00ED9B44 /* OGVKit Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OGVKit Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		E521B3FB20ECA7FE00ED9B44 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E521B3FD20ECA83200ED9B44 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		E521B3FF20ECA98200ED9B44 /* NSArray+FNVideoArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FNVideoArray.h"; sourceTree = "<group>"; };
+		E521B40020ECA98200ED9B44 /* NSArray+FNVideoArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FNVideoArray.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D59E30BF54DDE9CCFFD9D02 /* Pods_OGVKit_Example.framework in Frameworks */,
+				A353D79544A72A9CA29C3ADD /* Pods_OGVKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A18EA97D36CE85032033363 /* Pods_OGVKit_Tests.framework in Frameworks */,
+				A2E4950C87EED7185682564D /* Pods_OGVKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +113,8 @@
 		7016D2F53EB12107BE8CD805 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7C3D9A2848BAFADE8CD1F89 /* Pods_OGVKit_Example.framework */,
-				15293075762407D432DDD467 /* Pods_OGVKit_Tests.framework */,
+				96B5E167147BC5914CD2A161 /* Pods_OGVKit_Example.framework */,
+				DA6BD24056908B35569414EA /* Pods_OGVKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		D4F61F571CD7ADAC00898F7F = {
 			isa = PBXGroup;
 			children = (
+				E521B3F920ECA75A00ED9B44 /* OGVKitCollectionView Example */,
 				D4F61F621CD7ADAD00898F7F /* OGVKit Example */,
 				D4F61F7C1CD7ADAD00898F7F /* OGVKit Tests */,
 				D4F61F611CD7ADAC00898F7F /* Products */,
@@ -194,6 +203,18 @@
 			path = "OGVKit ExampleTests";
 			sourceTree = "<group>";
 		};
+		E521B3F920ECA75A00ED9B44 /* OGVKitCollectionView Example */ = {
+			isa = PBXGroup;
+			children = (
+				E521B3FA20ECA7FE00ED9B44 /* OGVKit Example-Bridging-Header.h */,
+				E521B3FB20ECA7FE00ED9B44 /* CollectionViewController.swift */,
+				E521B3FD20ECA83200ED9B44 /* VideoCell.swift */,
+				E521B3FF20ECA98200ED9B44 /* NSArray+FNVideoArray.h */,
+				E521B40020ECA98200ED9B44 /* NSArray+FNVideoArray.m */,
+			);
+			path = "OGVKitCollectionView Example";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,7 +227,6 @@
 				D4F61F5D1CD7ADAC00898F7F /* Frameworks */,
 				D4F61F5E1CD7ADAC00898F7F /* Resources */,
 				C9204C917B1F00D234526E4E /* [CP] Embed Pods Frameworks */,
-				5591F1C6635D2A54630693F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,8 +245,6 @@
 				D4F61F751CD7ADAD00898F7F /* Sources */,
 				D4F61F761CD7ADAD00898F7F /* Frameworks */,
 				D4F61F771CD7ADAD00898F7F /* Resources */,
-				006856319B8410E95E6EC09B /* [CP] Embed Pods Frameworks */,
-				3629D3AAF3736F18FF11CDF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,7 +267,8 @@
 				TargetAttributes = {
 					D4F61F5F1CD7ADAC00898F7F = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 7LBY3ZCYK9;
+						DevelopmentTeam = 2C798GJYS4;
+						LastSwiftMigration = 0940;
 					};
 					D4F61F781CD7ADAD00898F7F = {
 						CreatedOnToolsVersion = 7.3;
@@ -308,51 +327,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		006856319B8410E95E6EC09B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OGVKit Tests/Pods-OGVKit Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3629D3AAF3736F18FF11CDF4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OGVKit Tests/Pods-OGVKit Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5591F1C6635D2A54630693F6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OGVKit Example/Pods-OGVKit Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8F88E7EA12DBABE6B51C9A47 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +353,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OGVKit Example/Pods-OGVKit Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OGVKit/OGVKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/libnestegg/nestegg.framework",
 				"${BUILT_PRODUCTS_DIR}/libogg/ogg.framework",
 				"${BUILT_PRODUCTS_DIR}/liboggz/oggz.framework",
@@ -390,6 +365,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OGVKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nestegg.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ogg.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/oggz.framework",
@@ -428,10 +404,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E521B3FE20ECA83200ED9B44 /* VideoCell.swift in Sources */,
 				D4F61F651CD7ADAD00898F7F /* main.m in Sources */,
 				D474D5C01CD7AFFE00D8BBE3 /* OGVCommonsExampleItem.m in Sources */,
+				E521B3FC20ECA7FF00ED9B44 /* CollectionViewController.swift in Sources */,
 				D474D5C11CD7AFFE00D8BBE3 /* OGVExampleItem.m in Sources */,
 				D474D5BF1CD7AFFE00D8BBE3 /* OGVAppDelegate.m in Sources */,
+				E521B40120ECA98200ED9B44 /* NSArray+FNVideoArray.m in Sources */,
 				D474D5C31CD7AFFE00D8BBE3 /* OGVLinkedExampleItem.m in Sources */,
 				D474D5C41CD7AFFE00D8BBE3 /* OGVViewController.m in Sources */,
 			);
@@ -526,6 +505,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -574,6 +555,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -585,16 +568,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7LBY3ZCYK9;
+				DEVELOPMENT_TEAM = 2C798GJYS4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OGVKit Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brionv.OGVKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OGVKitCollectionView Example/OGVKit Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -604,16 +591,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7LBY3ZCYK9;
+				DEVELOPMENT_TEAM = 2C798GJYS4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OGVKit Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brionv.OGVKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OGVKitCollectionView Example/OGVKit Example-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -621,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97FB581D80B48B5EFE9FA810 /* Pods-OGVKit Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = "OGVKit Tests/Info.plist";
@@ -635,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBFEF16242285C7F28CBAFD5 /* Pods-OGVKit Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = "OGVKit Tests/Info.plist";

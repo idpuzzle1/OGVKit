@@ -7,6 +7,7 @@
 //
 
 #import "OGVAppDelegate.h"
+#import "OGVKit_Example-Swift.h"
 
 @import OGVKit;
 
@@ -16,6 +17,8 @@
 {
     // Log everything to console in the demo.
     OGVKit.singleton.logger.level = OGVLogLevelDebug;
+    
+    self.window.rootViewController = [[CollectionViewController alloc] init];
 
     return YES;
 }
